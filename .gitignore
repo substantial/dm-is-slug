@@ -6,3 +6,4 @@ tmp
 .yardoc
 doc
 .bundle
+.rvmrc
