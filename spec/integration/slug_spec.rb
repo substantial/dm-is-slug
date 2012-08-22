@@ -213,11 +213,6 @@ describe DataMapper::Is::Slug do
       post_slug_property.length.should == 30
     end
 
-    it "should output slug with to_param method" do
-      @u1.to_param.should == ["john"]
-      @p1.to_param.should == ["my-first-shinny-blog-post"]
-    end
-
     it "should find model using get method using id" do
       u = User.get(@u1.id)
       u.should_not be_nil
